@@ -107,7 +107,7 @@ var CubeBoard = React.createClass({
         <div className = "cubeNet" onKeyPress={this.handleKeyPress}>
           {rows}
 
-          <div>
+          <div className="button-row">
             <button onClick={function(){ return(that.processMovement('L'));} } id="leftTurn" className="bigButton"> Turn Left</button>
             <button onClick={function(){ return(that.processMovement('F'));} } id="forward" className="bigButton"> Move Forward </button>
             <button onClick={function(){ return(that.processMovement('R'));} } id="rightTurn" className="bigButton"> Turn Right </button>

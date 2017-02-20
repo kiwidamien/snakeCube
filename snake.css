@@ -36,10 +36,11 @@ h1{
 }
 
 
-.cubeContainer{
-  width: 680px;
+.cubeNet{
+  min-width: 600px;
   text-align: center;
   margin: 0 auto;
+  display: table;
 }
 
 .cubeCell{
@@ -47,7 +48,7 @@ h1{
   min-width: 40px;
   min-height:40px;
   vertical-align: top;
-  display: inline-block;
+  display: table-cell;
   border: 1px solid #999;
   padding: 0px;
   margin: 0px;
@@ -62,20 +63,9 @@ h1{
 
 
 .button-row{
-  background-color:#CCFFCC;
-  text-align: justify;
-}
-
-.bigButton{
-  background-color: #DADADA;
-  display: inline-block;
-  height: 36px;
-  width: 20%;
-  margin: 2%;
+  display:table-row;
   text-align: center;
-  font-size: 16px;
-  color: #922;
-  font-weight: bold;
+  height: 60px;
 }
 
 .button-row:after{
@@ -84,16 +74,31 @@ h1{
   display: inline-block;
 }
 
-.cell-row{
-  margin: 0px;
-  padding: 0px;
-  height: 40px;
-  font-size: 0em;
-}
-.cell-row:after{
-  clear: both;
+#leftTurn{
+  float: left;
 }
 
+#rightTurn{
+  float: right;
+}
+
+.bigButton{
+  background-color: #DADADA;
+  display: table-cell;
+  height: 36px;
+  width: 25%;
+  margin: 1%;
+  text-align: center;
+  font-size: 16px;
+  color: #922;
+  font-weight: bold;
+}
+
+
+.cell-row{
+  display: table-row;
+  background-color: #F00;
+}
 
 .face1{
   background: #87CFBC;
